@@ -1,4 +1,4 @@
-## Quick start
+## 如何使用
 
 To install using `pip`:
 ``` sh
@@ -10,9 +10,6 @@ To use in `mkdocs.yml`:
 theme: windmill
 ```
 
-Note that it's important for there to exist a homepage, e.g. a top-level root element in mkdocs 1.0+:
-``` yaml
-nav:
-  - Home: index.md
-```
+安装完成后替换`Python38\Lib\site-packages\mkdocs_windmill`目录下的`base.js`和`base.css`两个文件
 
+https://github.com/gristlabs/mkdocs-windmill/issues/28#issuecomment-738916389
