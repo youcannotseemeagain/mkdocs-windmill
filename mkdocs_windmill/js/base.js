@@ -313,17 +313,17 @@ function collapseAndRemove(collapsibleElem) {
 
 function renderPageToc(parentElem, pageUrl, pageToc) {
   var ul = $('<ul class="wm-toctree">');
-  function addItem(tocItem) {
-    ul.append($('<li class="wm-toc-li">')
+  function addItem(tocItem, level) {    // <-- added 'level' arg here
+    ul.append($('<li class="wm-toc-li hdg-level' + level + '">')   // // <-- added 'hdg-leveln' class here
       .append($('<a class="wm-article-link wm-page-toc-text">')
         .attr('href', pageUrl + tocItem.url)
         .attr('data-wm-adjusted', 'done')
         .text(tocItem.title)));
     if (tocItem.children) {
-      tocItem.children.forEach(addItem);
+      tocItem.children.forEach((item) => { addItem(item, (level +1)) });    // <-- passing in incremented level here
     }
   }
-  pageToc.forEach(addItem);
+  pageToc.forEach((tocItem) => { addItem(tocItem, 1) });   // <-- passing in initial level 1 here
 
   $('.wm-page-toc-opener').removeClass('wm-page-toc-opener wm-page-toc-open');
   collapseAndRemove($('.wm-page-toc'));
