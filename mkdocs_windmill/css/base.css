@@ -121,6 +121,8 @@ body {
   transition: margin-left 0.3s;
 }
 
+
+
 .wm-content-pane {
   position: absolute;
   top: 0px;
@@ -244,6 +246,44 @@ body {
 .wm-toc-lev4 + .wm-page-toc { margin-left: 56px; }
 .wm-toc-lev5 + .wm-page-toc { margin-left: 70px; }
 .wm-toc-lev6 + .wm-page-toc { margin-left: 84px; }
+
+.wm-toc-li.hdg-level2 {
+    padding-left: 8px;
+    font-size: 1.14rem;    
+}
+.wm-toc-li.hdg-level3 {
+    padding-left: 16px;
+    font-size: 1.14rem;    
+}
+.wm-toc-li.hdg-level4 {
+    padding-left: 20px;
+    font-size: 1.14rem;    
+}
+.wm-toc-li.hdg-level5 {
+    padding-left: 24px;
+    font-size: 1.14rem;    
+}
+
+.wm-toc-li.hdg-level6 {
+    padding-left: 28px;
+    font-size: 1.14rem;    
+}
+
+.wm-toc-li.hdg-level7 {
+    padding-left: 32px;
+    font-size: 1.14rem;    
+}
+
+.wm-toc-li.hdg-level8 {
+    padding-left: 36px;
+    font-size: 1.14rem;    
+}
+
+.wm-toc-li.hdg-level9 {
+    padding-left: 40px;
+    font-size: 1.14rem;    
+}
+
 
 .wm-toc-li-nested {
   padding: 0px;
